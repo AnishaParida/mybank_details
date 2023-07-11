@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns:tnt="sap.tnt" xmlns:core= "sap.ui.core" 
+xmlns="sap.m">
+
+    <VBox id="vBox1" class="sapUiSmallMargin">
+        <Title text="{i18n>accDetails}" id="accDetails" level="H1"/>
+        <HBox id="hBox1">
+            <Label id="lblacnum" text="{i18n>accNum}" class="sapUiSmallMarginEnd"/>
+            <Text id="accountNum" text="192837465"  />
+        </HBox>
+        <HBox id="hBox2">
+            <Label id="lblAcHolderNameId" text="{i18n>accHName}" class="sapUiSmallMarginEnd"/>
+            <Text id="idAcHolderNameValue" text="Anisha Parida"/>
+        </HBox>
+        <HBox id="hBox3" class="sapUiSmallMarginBottom">
+            <Label id="lblIFSCId" text="{i18n>ifsCode}" class="sapUiSmallMarginEnd"/>
+            <Text id="idIFSCValue" text="AXIS001921"/>
+        </HBox>
+    </VBox>
+
+</core:FragmentDefinition> 
