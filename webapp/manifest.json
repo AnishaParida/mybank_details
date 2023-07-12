@@ -57,7 +57,18 @@
         "settings": {
           "bundleName": "mybankdetails.i18n.i18n"
         }
-      }
+      },
+      "i18n_es": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "mybankdetails.i18n.i18n_es"
+        }
+      },
+      "": {
+            "dataSource": "mainService",
+            "preload": true,
+            "settings": {}
+          }
     },
     "resources": {
       "css": [
