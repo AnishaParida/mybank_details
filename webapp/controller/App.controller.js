@@ -9,15 +9,15 @@ sap.ui.define([
 
         return Controller.extend("mybankdetails.controller.App", {
             onInit: function () {
-                var appLang;
-                if (navigator.language == "es")
-                    appLang = "i18n_es";
-                else if (navigator.language == "en")
-                    appLang = "i18n";
-                else
-                    appLang = "i18n";
-                var i18nModel = this.getOwnerComponent().getModel(appLang)
-                this.getOwnerComponent().setModel(i18nModel, "i18n")
+                // this._setGlobalModel();
+                
+                this._setGlobalLanguage();
+
+                let oProfileModel = new sap.ui.model.json.JSONModel(
+                    {profile: sap.ui.require.toUrl("mybankdetails/images/profile.jpg")}
+                );
+                this.getView().setModel(oProfileModel);
+                
             },
 
             onOpenBankDetails: function () {
@@ -35,6 +35,21 @@ sap.ui.define([
 
             onCloseBankDetails: function () {
                 this.byId("moreBankDetails").close();
+            },
+            // _setGlobalModel: function(){
+            //     let oModel = this.getOwnerComponent().getModel("oBankDetails");
+            //     this.getView().setModel(oModel);
+            // },
+            _setGlobalLanguage: function(){
+                var appLang;
+                if (navigator.language == "es")
+                    appLang = "i18n_es";
+                else if (navigator.language == "en")
+                    appLang = "i18n";
+                else
+                    appLang = "i18n";
+                var i18nModel = this.getOwnerComponent().getModel(appLang)
+                this.getOwnerComponent().setModel(i18nModel, "i18n")
             }
         });
     });
