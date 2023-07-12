@@ -1,0 +1,39 @@
+{
+    "accountDetails": {
+        "AccountNum": "192837465",
+        "Name": "Anisha Parida",
+        "Ifsc": "AXIS001921",
+        "customerid": "9143658722",
+        "address": {
+            "city": "Denver",
+            "postalcode": "117651",
+            "housenumber": "101",
+            "street": "Merlot Street",
+            "state": "Colorado",
+            "country": "USA"
+        }
+    },
+    "carddetails": [
+        {
+            "cardtype": "debit card",
+            "cardnumber": "123456789013421",
+            "cardcompany": "master card",
+            "assignmentdate": "assigned on 20 May 2022",
+            "state": true
+        },
+        {
+            "cardtype": "credit card",
+            "cardnumber": "122835162390661",
+            "cardcompany": "master card",
+            "assignmentdate": "assigned on 09 Jan 2017",
+            "state": false
+        },
+        {
+            "cardtype": "debit card",
+            "cardnumber": "115596387633721",
+            "cardcompany": "master card",
+            "assignmentdate": "assigned on 17 Mar 2023",
+            "state": true
+        }
+    ]
+}
